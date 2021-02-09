@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bgg"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".view.DetikActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Masukan Detik"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_detik1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textSize="60sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Konversi Jam, Menit, Detik"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/hasil_detik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_detik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Konversi"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/bgg_button"/>
+
+</LinearLayout>
